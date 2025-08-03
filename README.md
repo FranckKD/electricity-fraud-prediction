@@ -1,25 +1,26 @@
 # ⚡ Electricity Fraud Prediction
 
-Ce projet utilise des techniques de machine learning pour détecter les cas potentiels de fraude dans la consommation d'électricité à partir de données de compteurs.
+This project uses machine learning techniques to detect potential cases of fraud in electricity consumption using meter data.
 
-## 📂 Contenu du projet
+## 📂 Project content
 
-- `notebooks/` : notebooks Jupyter d’exploration, de traitement des données et de modélisation.
-- `data/` : (fichiers zippés) contient les données brutes et transformées.
-- `models/` : modèles entraînés enregistrés.
-- `src/` : scripts Python pour le nettoyage, l’ingénierie des features et la prédiction.
-- `requirements.txt` : dépendances Python du projet.
+- `notebooks/` : Jupyter notebooks for EDA, feature engineering and model design.
+- `data/` : contains raw and processed data.
+- `models/` : Saved trained models.
+- `src/` : Python scripts for EDA, feature engineering and model prediction.
+- `tests/` : Python scripts for testing the different steps of this ml project.
+- `requirements.txt` : Python dependencies.
 
-## 🧪 Modèles utilisés
+## 🧪 Algorithms used
 
 - **Random Forest**
 - **XGBoost**
 - **LightGBM**
 - **Logistic Regression**
 
-## 📊 Variables importantes
+## 📊 Important variables
 
-Les données contiennent des variables telles que :
+The data contains variables such as :
 
 - `customer_id`
 - `meter_reading`
@@ -28,13 +29,12 @@ Les données contiennent des variables telles que :
 - `fraud_flag`
 - etc.
 
-Un prétraitement rigoureux est appliqué : gestion des valeurs manquantes, détection des valeurs aberrantes, encodage des variables catégorielles, normalisation.
 
-## 🎯 Objectif
+## 🎯 Goal
 
-> Prédire si un client présente un comportement suspect lié à la fraude à l’électricité, à partir de données de consommation passées.
+> Predict if a customer is a fraudster using historical cunsumption data.
 
-## 🚀 Utilisation
+## 🚀 Application
 
 ### Installation
 
