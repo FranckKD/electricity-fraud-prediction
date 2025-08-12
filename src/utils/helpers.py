@@ -28,3 +28,11 @@ def convert_to_category(df, col_names):
     for col in col_names:
         df[col] = df[col].astype('category')
     return df
+
+def iqr(df, col_name):
+    Q1 = df[col_name].quantile(0.25)
+    Q3 = df[col_name].quantile(0.75)
+    IQR = Q3 - Q1
+    borne_inf = Q1 - 1.5 * IQR
+    borne_sup = Q3 + 1.5 * IQR
+    return borne_inf, borne_sup
